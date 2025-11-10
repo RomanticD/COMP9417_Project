@@ -1,0 +1,5 @@
+config,Accuracy,Macro-F1,Macro-Recall
+hourly,0.6043,0.5691,0.5935
+full,0.5903,0.5689,0.6007
+no_fe,0.6115,0.5648,0.5885
+daily,0.6257,0.4224,0.4672

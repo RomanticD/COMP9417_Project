@@ -1,0 +1,5 @@
+h,naive,best_model,best_config,best_cleaning,best_Macro-F1,uplift_vs_naive,metric
+1,0.7427,RF,full,off,0.7863,0.0436,Macro-F1
+6,0.3809,RF,full,off,0.6721,0.2911,Macro-F1
+12,0.379,RF,full,off,0.6395,0.2605,Macro-F1
+24,0.5858,RF,hourly,on(provided),0.5724,-0.0133,Macro-F1

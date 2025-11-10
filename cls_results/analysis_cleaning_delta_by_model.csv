@@ -1,0 +1,3 @@
+model,Accuracy,Macro-F1,Macro-Recall
+RF,-0.0022,0.0023,-0.0029
+LogReg,-0.0527,-0.0453,-0.026
