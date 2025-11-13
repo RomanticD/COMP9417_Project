@@ -3,8 +3,9 @@
 ## Project Structure
 
 ```
-├── data/
-│   └── air+quality/
+├── data_orig/
+│   └── data/
+|       air+quality/
 │       ├── AirQualityUCI.csv
 │       └── AirQualityUCI.xlsx
 ├── eda_figures/                    # EDA visualizations

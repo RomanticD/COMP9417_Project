@@ -1,4 +1,0 @@
-version,features,train_samples,val_samples,test_samples,train_period,test_period
-hourly,106,5252,1314,2231,2004-03-12 to 2004-11-05,2005-01-01 to 2005-04-04
-daily,19,204,51,94,2004-03-18 to 2004-11-10,2005-01-01 to 2005-04-04
-full,146,4785,1197,2231,2004-03-18 to 2004-11-09,2005-01-01 to 2005-04-04
