@@ -3,27 +3,72 @@
 ## Project Structure
 
 ```
-├── data_orig/
-│   └── data/
-|       air+quality/
-│       ├── AirQualityUCI.csv
-│       └── AirQualityUCI.xlsx
-├── eda_figures/                    # EDA visualizations
+COMP9417_Project/
+├── README.md
+├── proj_Main.ipynb                     # Main end-to-end project notebook
+├── proj_Requirements.pdf               # Project specification
+│
+├── data_orig/                          # Original data & diagnosis
+│   ├── data/
+│   │   └── air+quality/                # Raw dataset from UCI
+│   ├── check_xlsx.py                   # Utility for checking raw Excel
+│   ├── diagnosis_figures/              # Missing value visualizations
+│   │   └── missing_pattern_analysis.png
+│   └── missing_value_diagnosis.py      # Missing value analysis script
+│
+├── output_Preprocessing_TemporalDataSplitting/   # Preprocessing outputs
+│   ├── train_2004.csv
+│   ├── test_2005.csv
+│   ├── preprocessed_data_normalized.csv
+│   ├── preprocessed_data_unnormalized.csv
+│   ├── scaler.pkl
+│   └── preprocessing_summary.png
+│
+├── output_AnomalyDetection/            # Anomaly detection outputs
+│   ├── train_2004_anomaly_flag.csv
+│   ├── train_2004_cleaned.csv
+│   ├── train_2004_removed_anomalies.csv
+│   ├── anomaly_detection_detailed_results.csv
+│   ├── anomaly_summary_statistics.csv
+│   └── anomaly_analysis_train_2004.png
+│
+├── output_FeatureEngineering/          # Feature-engineered datasets
+│   ├── train_2004_fe_daily_orig.csv
+│   ├── train_2004_fe_daily_cleaned.csv
+│   ├── train_2004_fe_hourly_orig.csv
+│   ├── train_2004_fe_hourly_cleaned.csv
+│   ├── train_2004_fe_merge_orig.csv
+│   ├── train_2004_fe_merge_cleaned.csv
+│   ├── test_2005_fe_daily.csv
+│   ├── test_2005_fe_hourly.csv
+│   ├── test_2005_fe_merge.csv
+│   └── fe_train_test_summary.csv
+│
+├── output_EDA/                         # Exploratory Data Analysis figures
 │   ├── temporal_patterns.png
 │   ├── correlation_heatmap.png
 │   └── pollutant_distributions.png
-├── diagnosis_figures/              # Missing value analysis
-│   └── missing_pattern_analysis.png
-├── preprocessing_output/           # Preprocessed datasets
-│   ├── preprocessed_data_full.csv
-│   ├── preprocessed_data_normalized.csv
-│   ├── train_2004.csv
-│   ├── test_2005.csv
-│   └── scaler.pkl
-├── models/                         
-├── eda_analysis.py
-├── missing_value_diagnosis.py
-├── data_preprocessing.py
-├── Group_Project_Main.ipynb   
-└── README.md
+│
+├── results_cls/                        # Classification experiment results
+│   ├── analysis/                       # Aggregated metrics (RQ1–RQ4)
+│   │   ├── rq1_model_comparison.csv
+│   │   ├── rq2_anomaly_effect.csv
+│   │   ├── rq3_fe_effect.csv
+│   │   └── rq4_horizon_effect.csv
+│   │
+│   ├── figs/                           # Confusion matrices & performance figs
+│   │   ├── cm_LogReg_FE-daily_cleaned_h1.png
+│   │   ├── cm_RF_FE-daily_cleaned_h1.png
+│   │   ├── cm_XGB_FE-daily_cleaned_h1.png
+│   │   ├── cm_naive_h1.png
+│   │   ├── rq1_model_comparison.png
+│   │   ├── rq2_cleaning_uplift_by_fe.png
+│   │   ├── rq3_fe_effect_heatmap.png
+│   │   └── rq4_perf_vs_horizon.png
+│   │   ... (many more confusion matrix images omitted)
+│   │
+│   └── summary_full_run_20251113_161730.csv   # Full metrics log for final run
+│
+├── exp_pipeline_md/
+    └── cls_pipeline.md                # End-to-end classification pipeline doc
 ```
