@@ -1,0 +1,12 @@
+,Value
+total_samples,6602.0
+residual_anomalies,159.0
+isolation_forest_anomalies,331.0
+lof_anomalies,331.0
+enhanced_consensus_anomalies,176.0
+pollution_spikes,329.0
+avg_temperature_anomalies,17.75940739633174
+avg_temperature_normal,20.901463769659063
+weekend_anomaly_rate,0.015143603133159269
+weekday_anomaly_rate,0.031363345423511844
+cleaning_rate,2.6658588306573767
