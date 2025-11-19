@@ -156,9 +156,12 @@ A minimal environment compatible with all notebooks is provided in `requirements
 numpy
 pandas
 matplotlib
+seaborn
+scipy
 scikit-learn
 xgboost
-seaborn
+openpyxl
+jupyter
 ```
 
 ---
